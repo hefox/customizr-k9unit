@@ -11,6 +11,25 @@ Version:        1.0.0
 /* Your awesome customizations start right here !
 -------------------------------------------------------------- */
 
+.k9-submenu {
+  right: 0px;
+  margin-bottom: -40px;
+  position: absolute;
+}
+#mc-embedded-subscribe-form {
+  margin: 0px;
+  padding: 0px;
+  display: inline-block;
+  
+}
+
+#mc-embedded-subscribe-form input {
+  display: inline-block;
+}
+#mc-embedded-subscribe-form input.email {
+  max-width: 74px;
+  margin-bottom: 0px;
+}
 .tc-header {
   color: white;
   background-color: black;
@@ -49,6 +68,11 @@ footer#footer .colophon a.back-to-top {
   display: none;
   
 }
+
+.close, h1, h2, h3, h4, h5, h6 {
+  text-shadow: none;
+}
+
 
 @media (max-width: 979px) {
   .tc-header {
@@ -89,7 +113,7 @@ footer#footer .colophon a.back-to-top {
 }
 
 .nav-collapse.collapse, .no-navbar .nav-collapse {
-  background-color: rgba(0,0,0,.5);
+  background-color: rgba(0,0,0,.7);
   border-radius: 5px;
 }
 /*!
@@ -442,7 +466,8 @@ a.thumbnail:focus {
   color: #C00A09;
 }
 .site-description {
-  color: #C00A09;
+  color: #FFF;
+  opacity: .75;
 }
 .navbar .nav > li.current-menu-item > a,
 .tc-regular-menu .navbar .nav > li.current-menu-ancestor > a {
