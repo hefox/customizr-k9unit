@@ -36,18 +36,17 @@ function k9_add_submenu() {
 add_filter ( 'tc_social_in_header' , 'k9_add_events_subscribe' );
 function k9_add_events_subscribe() {
   //class
-  $class =  apply_filters( 'tc_social_header_block_class', 'span5' );
   ob_start();
 ?>
-  <div class="social-block <?php echo $class ?>">
+  <div class="social-block span6">
     <?php if ( 0 != tc__f( '__get_option', 'tc_social_in_header') ) : ?>
       <?php echo tc__f( '__get_socials' ) ?>
         <!-- Begin MailChimp Signup Form -->
         <form action="//sfk9unit.us12.list-manage.com/subscribe/post?u=d95a16f47be2acdbbff34e7f8&amp;id=c2216663af" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-        	<input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="Fetch Email" required>
+        	<input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="Enter email to join the pack!" required>
           <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
           <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_d95a16f47be2acdbbff34e7f8_c2216663af" tabindex="-1" value=""></div>
-          <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button" style>
+          <input type="submit" value="GO" name="subscribe" id="mc-embedded-subscribe" class="button" style>
         </form>
         
         <!--End mc_embed_signup-->
@@ -58,3 +57,8 @@ function k9_add_events_subscribe() {
   ob_end_clean();
   return $html;
 }
+
+function k9_tc_tagline_class($string) {
+    return 'span6';
+}
+add_filter( 'tc_tagline_class', 'k9_tc_tagline_class', 10, 1 );

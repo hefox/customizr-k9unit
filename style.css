@@ -27,17 +27,20 @@ Version:        1.0.0
   display: inline-block;
 }
 #mc-embedded-subscribe-form input.email {
-  max-width: 74px;
+  width: 173px;
   margin-bottom: 0px;
 }
 .tc-header {
   color: white;
   background-color: black;
   border-bottom: 10px solid #FFF;
-  background-image: url(images/logo-big.jpg);
+  /*background-image: url(images/logo-big.jpg);*/
   background-repeat: no-repeat;
   background-size: contain;
   background-position: right center;
+}
+.navbar-inner .social-block {
+  margin: 0px 0px 20px 0px;
 }
 
 footer#footer,
