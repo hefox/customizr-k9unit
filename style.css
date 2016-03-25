@@ -72,6 +72,17 @@ footer#footer .colophon a.back-to-top {
   
 }
 
+.carousel-caption {
+  background: rgba(0,0,0,.5);
+  border-radius: 5%;
+  padding: 1% 5%;
+}
+
+.carousel-caption .slide-title {
+  padding: 2%;
+  text-align: center;
+}
+
 .close, h1, h2, h3, h4, h5, h6 {
   text-shadow: none;
 }
